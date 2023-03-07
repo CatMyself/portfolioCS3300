@@ -1,0 +1,87 @@
+HTML Notes
+
+	HTML elements:
+
+An HTML element is everything that goes inbetween 2 HTML tags.
+Tags are pieces of markup language that can be used to describe the formatting of the contents within them
+
+for example
+<h1> (Some content) </h1>	This formats a header
+
+<p1> (Some more content) </p1>	This formats a paragragh under a header
+
+<br>	(This is an open element, which has no body or closing tag)	a break in the text
+
+
+These elements can be nested, and in fact the <HTML> and </HTML> tags are used to define an HTML document, everthing else being nested in the body of this header
+
+
+	Lists in HTML:
+
+Some tags denote a list:
+
+<UL> </UL> describe an unordered list, and <OL> </OL> for an ordered list (Which are numbered)
+in an ordered or unordered list, <LI> </LI> describes one element of that list
+
+A descriptive list is denoted by <DL> and </DL>
+nested in a descriptive list are the the defined terms <dt> </dt>, and immediately following a term you can further describe a defined term with a <dd> </dd> tag.
+
+
+	Hyperlinks in HTML:
+the tags <a> and </a> describe an HTML hyperlink, a link that leads to some other document
+
+<a href ="SomeURL">   (body part of tag) </a>
+
+here, the value given to href is the destination URL from clicking on the body of the tag, which is what is displayed to the user.
+
+additionally, you can define the target in the tag, which will define how the tag opens up this new link
+<a href = "url.com" target = (target)> "This is the body of my message" </a>
+
+where (target) can be _self, _parent, _top, or _blank, which describes how the window is opened
+
+
+
+
+	HTML Forms:
+Forms are elements that allow users to input information to be processed by the server
+
+
+
+
+
+
+	Bootstrap containers:
+
+a container in bootstrap is the most basic layout element of bootstrap
+
+they are accessed with the class selector
+
+(copied from a tutorial website)
+https://getbootstrap.com/docs/5.2/layout/containers/
+<div class="container-sm">100% wide until small breakpoint</div>
+<div class="container-md">100% wide until medium breakpoint</div>
+<div class="container-lg">100% wide until large breakpoint</div>
+<div class="container-xl">100% wide until extra large breakpoint</div>
+<div class="container-xxl">100% wide until extra extra large breakpoint</div>
+
+	Bootstrap lists:
+a bootstrap list is a sort of class that can be invoked on html's list elements
+<ul class="list-group">
+<li class="list-group-item" some item </li>
+</ul>
+
+A dropdown menu is sort of another version of a list, except that it only shows
+up when it is clicked
+there are certain guidlines and standards about what kind of content should be in 
+certain kinds of contextual menus on web pages, to increase readabiliy/accesibility of the content
+(from same website)
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Dropdown button
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+  </ul>
+</div>
